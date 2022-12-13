@@ -9,6 +9,7 @@ function App() {
         <p>
           página <code>en</code> construcción.
         </p>
+        <h1>PARA FIESTAS</h1>
         <a
           className="App-link"
           href="https://djcarloshermida.com.uy"

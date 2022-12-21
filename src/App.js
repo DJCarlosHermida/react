@@ -1,44 +1,27 @@
-import logo from './logo.svg';
+import logo from './discoVinilo.png';
 import './App.css';
+import { saludar } from './utils';
 
 function App() {
+
+  saludar()
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <nav>
-          <img src={logo} className="App-logo" alt="logo" />
-        </nav>
-        <ul>
-        <a href="index.html">
-            Inicio
-          </a>
-        </ul>
-        <ul>Servicios</ul>
-        <ul>Galería
-          <ol>Fotos</ol>
-          <ol>Videos</ol>
-        </ul>
-        <ul>Multimedia
-          <ol>Curso DJ</ol>
-          <ol>Música Electrónica</ol>
-          <ol>Remix</ol>
-          <ol>Directos</ol>
-        </ul>
-        <ul>Contacto</ul>
+        <img src={logo} className="App-logo" alt="logo" />
       </header>
-      
 
-      <body>
-        <div>
-          <h1>PARA FIESTAS</h1>
-        </div>
+      <section className="main">
+        <h1>| PARA FIESTAS |</h1>
+      </section>
 
       <footer>
-        <a className="App-link" href="https://djcarloshermida.com.uy" target="_blank" rel="noopener noreferrer">
-            | DJ CARLOS HERMIDA |
-          </a>
+        <p>© Copyright 2022 | All Rights Reserved ® </p>
+        <a className="App-link" href="https://djcarloshermida.com.uy" target="_blank" rel="noopener noreferrer">| DJ CARLOS HERMIDA |</a>
       </footer>
-      </body>
+
     </div>
   );
 }

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -9,7 +10,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 0.50s linear;
+    animation: App-logo-spin infinite 1.0s linear;
   }
 }
 
@@ -26,6 +27,10 @@
 
 .App-link {
   color: orange;
+}
+
+.main{
+  text-decoration: line-through;
 }
 
 @keyframes App-logo-spin {

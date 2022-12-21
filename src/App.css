@@ -32,6 +32,19 @@
 .main{
   text-decoration: line-through;
 }
+.navBar{
+  display: flex;
+  flex-direction: row;
+}
+.navBar .navLink{
+  color: white;
+}
+.navBar .navLink:hover{
+  color: orange;
+}
+.carrito{
+  width: 30px;
+}
 
 @keyframes App-logo-spin {
   from {

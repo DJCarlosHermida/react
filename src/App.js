@@ -1,27 +1,34 @@
 import logo from './discoVinilo.png';
 import './App.css';
-import { saludar } from './utils';
+import { Footer } from './footer';
+import { OpcionesDisco } from './components/OpcionesDisco';
 
 function App() {
-
-  saludar()
-
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <nav >
+          <ul className="navBar">
+            <ol><a href="#" className="navLink">Inicio</a></ol>
+            <ol><a href="#" className="navLink">Servicios</a></ol>
+            <ol><a href="#" className="navLink">Contacto</a></ol>
+            <img src="https://w7.pngwing.com/pngs/1008/303/png-transparent-shopping-cart-icon-product-return-shopping-cart-retail-supermarket-objects-thumbnail.png" alt="Carrito" title="Carrito" className="carrito"></img>
+          </ul>
+        </nav>
       </header>
 
       <section className="main">
         <h1>| PARA FIESTAS |</h1>
       </section>
 
-      <footer>
-        <p>© Copyright 2022 | All Rights Reserved ® </p>
-        <a className="App-link" href="https://djcarloshermida.com.uy" target="_blank" rel="noopener noreferrer">| DJ CARLOS HERMIDA |</a>
-      </footer>
+      <OpcionesDisco titulo="Opciones Discoteca" />
 
+
+
+      {/* <Servicios /> */}
+      <Footer />
     </div>
   );
 }

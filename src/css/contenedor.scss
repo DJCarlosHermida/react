@@ -9,14 +9,8 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        .header__logo {
-            font-size: 52px;
-            color: white;
-            font-weight: 700;
-            margin: 0;
-        }
-
         .header__nav {
+            color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -32,4 +26,8 @@ header {
         }
     }
     
+}
+.header__nav:hover{
+    background-color: rgba(245, 245, 245, 0.362);
+    border-radius: 5px;
 }

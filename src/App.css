@@ -42,9 +42,7 @@
 .navBar .navLink:hover{
   color: orange;
 }
-.carrito{
-  width: 30px;
-}
+
 
 @keyframes App-logo-spin {
   from {

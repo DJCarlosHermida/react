@@ -3,6 +3,8 @@ import './App.css';
 import { Footer } from './footer';
 import { OpcionesDisco } from './components/OpcionesDisco';
 import './css/contenedor.scss'
+import Clicker from './components/clicker';
+
 
 
 function App() {
@@ -30,7 +32,8 @@ function App() {
       <OpcionesDisco titulo="Opciones Discoteca" />
 
 
-
+      <Clicker />
+      
       {/* <Servicios /> */}
       <Footer />
     </div>

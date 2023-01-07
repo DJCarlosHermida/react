@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo"></img>
         <nav >
           <ul className="header__container">
           
@@ -20,7 +20,6 @@ function App() {
             <ol><a href="#" className="header__nav">Servicios</a></ol>
             <ol><a href="#" className="header__nav">Productos</a></ol>
             <ol><a href="#" className="header__nav">Contacto</a></ol>
-            <button className="material-symbols-outlined header__nav">garden_cart</button>
           </ul>
         </nav>
       </header>
@@ -33,8 +32,6 @@ function App() {
 
 
       <Clicker />
-      
-      {/* <Servicios /> */}
       <Footer />
     </div>
   );

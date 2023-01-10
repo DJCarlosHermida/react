@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import Bomba from "./Bomba"
+
 
 const Clicker = () => {
     const [counter, setCounter] = useState(0)
@@ -16,6 +18,11 @@ const Clicker = () => {
     const mostrar = () => {
         setShow ( !show)
     }
+
+    useEffect(() =>{
+        console.log('DJ');
+    },[])
+
     return (
         <div className="container my-5">
             <h2>Clicker</h2>
@@ -23,14 +30,15 @@ const Clicker = () => {
 
             <button className="btn btn-outline-primary mx-3" onClick={restar}>Click</button>
             <button className="btn btn-primary mx-3" onClick={sumar}>Click</button>
-            <p onClick={sumar}>{counter}</p>
+            <p onClick={sumar}>{counter} </p>
 
             <hr/>
             <button className="btn btn-success" onClick={mostrar}>
-                {show ? 'ocultar' : 'mostrar'}
+                {show ? 'Ocultar' : 'Mostrar'}
             </button>
-            {show && <p><img style={{width: `${counter * 16}px`}} src="https://images.emojiterra.com/google/android-10/512px/1f4a3.png" /></p>}
             
+            <Bomba show={show} counter={counter} />
+               
             
 
         </div>

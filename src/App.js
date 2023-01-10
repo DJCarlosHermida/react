@@ -3,11 +3,18 @@ import './App.css';
 import { Footer } from './footer';
 import { OpcionesDisco } from './components/OpcionesDisco';
 import './css/contenedor.scss'
-import Clicker from './components/clicker';
+import Clicker from './components/Clicker';
+import Nosotros from './components/aboutUs';
+import { useState } from 'react';
 
 
 
 function App() {
+
+  const [show, sertShow] = useState(true)
+  const handleShow = () => {
+    sertShow (!show)
+  }
 
   return (
     <div className="App">
@@ -29,9 +36,13 @@ function App() {
       </section>
 
       <OpcionesDisco titulo="Opciones Discoteca" />
+      <button onClick={handleShow}>Show</button>
+      { show && <Clicker /> }
 
 
-      <Clicker />
+      {/* <Clicker /> */}
+      <hr/>
+      <Nosotros />
       <Footer />
     </div>
   );

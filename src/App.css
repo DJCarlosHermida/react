@@ -17,7 +17,7 @@
 .App-header {
   background-color: #455e69;
   min-height: 5vh;
-  display: flex;
+  display: grid;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -43,7 +43,16 @@
   color: orange;
 }
 .image{
+  width: 200px;
+}
+.card{
   width: 250px;
+}
+.containerProducto{
+  flex-direction: row;
+}
+.desc{
+  width: 300px;
 }
 
 @keyframes App-logo-spin {

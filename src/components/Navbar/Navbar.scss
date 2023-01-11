@@ -1,0 +1,36 @@
+
+.header {
+    background-color: #78ccb0;
+    padding: 30px 0;
+
+    .header__container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__logo {
+            font-size: 52px;
+            color: white;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .header__nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+
+            .header__link {
+                text-transform: uppercase;
+                font-weight: 700;
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }
+    }
+    
+}

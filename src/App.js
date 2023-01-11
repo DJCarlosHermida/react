@@ -7,7 +7,8 @@ import Clicker from './components/Clicker';
 import Nosotros from './components/aboutUs';
 import { useState } from 'react';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,24 +30,28 @@ function App() {
         <nav >
           <ul className="header__container">
           
-            <ol><a href="#" className="header__nav">Inicio</a></ol>
-            <ol><a href="#" className="header__nav">Servicios</a></ol>
-            <ol><a href="#" className="header__nav">Productos</a></ol>
-            <ol><a href="#" className="header__nav">Contacto</a></ol>
+            <Link className='Link' to="/" >Inicio</Link>
+            <Link className='Link' to="/servicios" >Servicios</Link>
+            <Link className='Link' to="/productos" >Productos</Link>
+            <Link className='Link' to="/">Contacto</Link>
           </ul>
         </nav>
       </header>
-       <Routes>
-      <Route path='/'/>
-      <Route path=''/>
-      <Route path=''/>
-      <Route path=''/>
-    </Routes>
 
       <section className="main">
         <h1>| PARA FIESTAS |</h1>
+        <h3>Bienvenidos</h3>
       </section>
-      <ItemListContainer />
+
+
+       <Routes>
+      <Route path='/nosotros' element={<Nosotros />}/>
+      <Route path='/servicios' element={<Clicker />} />
+      <Route path='/productos' element={<ItemListContainer /> }/>
+    </Routes>
+
+      
+      
 
 
       <Footer />

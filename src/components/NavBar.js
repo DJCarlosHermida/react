@@ -6,10 +6,10 @@ const Navbar = () => {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo"></img>
         <nav className="header__nav">
-            <a className="header__link" href="#">Enlace 1</a>
-            <a className="header__link" href="#">Enlace 2</a>
-            <a className="header__link" href="#">Enlace 3</a>
-            <a className="header__link" href="#">Enlace 4</a>
+            <ol><Link href="#" className="header__nav">Inicio</Link></ol>
+            <ol><Link href="#" className="header__nav">Servicios</Link></ol>
+            <ol><Link href="#" className="header__nav">Productos</Link></ol>
+            <ol><Link href="#" className="header__nav">Contacto</Link></ol>
         </nav>
         </header>
 

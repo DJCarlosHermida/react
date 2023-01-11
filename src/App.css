@@ -30,7 +30,7 @@
 }
 
 .main{
-  text-decoration: line-through;
+  text-decoration: none;
 }
 .navBar{
   display: flex;
@@ -46,15 +46,31 @@
   width: 200px;
 }
 .card{
-  width: 250px;
-}
+  display: grid;
+  }
 .containerProducto{
   flex-direction: row;
 }
 .desc{
   width: 300px;
+  color: orange;
+  background-color: rgba(128, 128, 128, 0.164);
+  border-radius: 20px;
+  padding: 20px 5px;
 }
-
+.precio{
+  font-size: 20px;
+}
+.Link{
+  color: orange;
+  margin: 5px;
+  text-decoration: none;
+}
+.Link:hover{
+  color: #455e69;
+  background-color: rgba(255, 166, 0, 0.322);
+  border-radius: 5px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

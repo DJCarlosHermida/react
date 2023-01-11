@@ -6,6 +6,7 @@ import './css/contenedor.scss'
 import Clicker from './components/Clicker';
 import Nosotros from './components/aboutUs';
 import { useState } from 'react';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 
 
@@ -34,15 +35,17 @@ function App() {
       <section className="main">
         <h1>| PARA FIESTAS |</h1>
       </section>
+      <ItemListContainer />
 
-      <OpcionesDisco titulo="Opciones Discoteca" />
-      <button onClick={handleShow}>Show</button>
-      { show && <Clicker /> }
+
+      {/* <OpcionesDisco titulo="Opciones Discoteca" /> */}
+      {/* <button onClick={handleShow}>Show</button> */}
+      {/* { show && <Clicker /> } */}
 
 
       {/* <Clicker /> */}
       <hr/>
-      <Nosotros />
+      {/* <Nosotros /> */}
       <Footer />
     </div>
   );

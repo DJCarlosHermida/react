@@ -42,7 +42,9 @@
 .navBar .navLink:hover{
   color: orange;
 }
-
+.image{
+  width: 250px;
+}
 
 @keyframes App-logo-spin {
   from {

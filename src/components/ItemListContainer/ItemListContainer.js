@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import MOCK_DATA from '../../data/MOCK_DATA.json'
 
-
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([])
@@ -13,7 +12,7 @@ const ItemListContainer = () => {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve(MOCK_DATA)
-            }, 2500)
+            }, 1500)
         })
     }
 

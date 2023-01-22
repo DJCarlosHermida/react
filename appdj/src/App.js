@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navbar } from "./components/Navbar/Navbar";
+import { Usuario } from "./components/Usuario/Usuario";
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Contenedor from "./components/Contenedor/Contenedor";
+import MyButton from "./Ejemplos/MyButton/MyButton";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          DJ ECOMMERCE
-        </p>
-        <a
-          className="App-link"
-          href="https://djcarloshermida.com.uy"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          | DJCarlos Hermida - Official |
-        </a>
-      </header>
+  
+
+  return  (
+    <div>
+        <Navbar />
+        <Contenedor>
+          <Usuario nombre="DJ" curso="ReactJS" edad={22} />
+
+          <MyButton variant={2} className="otra-clase">
+            Da Click!
+            <small>Dale Wacho</small>
+          </MyButton>
+        </Contenedor> 
     </div>
   );
 }

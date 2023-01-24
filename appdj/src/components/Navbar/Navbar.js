@@ -12,7 +12,7 @@ export const Navbar = () => {
 
                     <nav className="header__nav">
                         <a className="header__Link" href="#">Inicio</a>
-                        <a className="header__Link" href="#">Artículos</a>
+                        <a className="header__Link" href="#">Productos</a>
                         <a className="header__Link" href="#">Galería</a>
                         <a className="header__Link" href="#">Contacto</a>
                         <a className="header__Link" href="#">Carrito</a>

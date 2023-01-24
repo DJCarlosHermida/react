@@ -1,5 +1,5 @@
 .header {
-    background-color: rgba(83, 14, 14, 0.822);
+    background: linear-gradient(to left, rgba(97, 13, 13, 0.733), black);
     padding: 30px 10px;
 
     .header__container {
@@ -11,8 +11,7 @@
 
         .header__logo {
             color: white;
-            font-size: 35px;
-            font-weight: 700;
+            width: 40px;
         }
             .header__nav {
                 display: flex;
@@ -23,9 +22,12 @@
                 .header__Link{
                     text-transform:  uppercase;
                     font-weight: 700;
-                    color: white;
+                    color: whitesmoke;
                     text-decoration: none;
                     font-size: 17px;
+                }
+                .header__Link:hover {
+                    color: orange;
                 }
 
             }

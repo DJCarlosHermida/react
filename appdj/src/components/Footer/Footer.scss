@@ -1,0 +1,22 @@
+.footer__container {
+    background: linear-gradient(to right, rgba(97, 13, 13, 0.733), black);
+    padding: 30px 10px;
+    text-align: center;
+
+    .footer__p {
+        text-transform:  uppercase;
+        color: whitesmoke;
+    }
+}
+.footer__a {
+    text-decoration: none;
+
+    
+    .footer__i {
+        text-transform: uppercase;
+        color: whitesmoke;
+    }
+}
+.footer__i:hover {
+    color: orange;
+}

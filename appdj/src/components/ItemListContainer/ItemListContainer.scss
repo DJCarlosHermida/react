@@ -1,0 +1,36 @@
+.productContainer {
+    display: flex;
+}
+
+.image {
+    width: 250px;
+}
+
+.card {
+    width: 300px;
+    padding: 10px 10px;
+}
+
+.card h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.description {
+    width: 250px;
+    padding: 0px 15px;
+}
+
+.price {
+    font-size: 19px;
+    
+}
+
+.seccionTitle {
+    color: whitesmoke;
+    text-align: center;
+    background: linear-gradient(to left, rgba(97, 13, 13, 0.733), black);
+    background: radial-gradient(to right, rgba(97, 13, 13, 0.733), black);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px ;
+}

@@ -8,13 +8,9 @@ const ItemList = ({ productos }) => {
             <hr />
 
             <section className="row my-4">
-                {productos.map((productos) =><Item key={productos.id} productos={productos} />
+                {productos.map((productos) =><Item key={productos.id} {... productos} />
                 )}
-
             </section>
-
-
-
 
         </div>
     )

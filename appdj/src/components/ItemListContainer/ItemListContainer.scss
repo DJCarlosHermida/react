@@ -3,7 +3,10 @@
 }
 
 .image {
-    width: 250px;
+    width: 180px;
+    border-radius: 20px;
+    margin-left: 20%;
+    
 }
 
 .card {
@@ -12,6 +15,11 @@
     padding: 10px 10px;
     border-radius: 20px;
     margin: 10px;
+    
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.17);
 }
 
 .card h2 {

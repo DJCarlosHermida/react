@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import { pedirDatos, pedirItemXId } from "../../helpers/pedirDatos"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
-
 const ItemDetailContainer = ({itemId}) => {
 
     const [item, setItem,] = useState(null)
@@ -23,7 +22,7 @@ const ItemDetailContainer = ({itemId}) => {
     }, [itemId])
 
     return (
-        <div className="container my-5 error">
+        <div className="container my-5">
             {
                 error ? error : item && <ItemDetail {...item} />
             }

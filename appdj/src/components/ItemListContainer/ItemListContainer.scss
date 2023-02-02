@@ -6,7 +6,11 @@
     width: 180px;
     border-radius: 20px;
     margin-left: 20%;
-    
+}
+
+.imageDetail {
+    width: 300px;
+    border-radius: 20px;
 }
 
 .card {
@@ -54,4 +58,18 @@
 
 .productosTitle:hover {
     color: orange;
+}
+
+.btn-VerMas {
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.btn-VerMas:hover {
+    background-color: rgb(97, 13, 13);
+    color: white;
+}
+
+.error {
+    color: red;
 }

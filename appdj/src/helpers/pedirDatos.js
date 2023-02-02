@@ -4,6 +4,23 @@ export const pedirDatos = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(MOCK_DATA)
-        }, 2500)
+        }, 2000)
+    })
+}
+
+export const pedirItemXId = (id) => {
+    return new Promise((resolve, reject) => {
+        setTimeout( () => {
+            const item = MOCK_DATA.find((el) => el.id === id)
+
+            if (item) {
+                resolve(item)
+            }else {
+                reject({
+                    error: 'Producto No Disponible'
+                })
+            }
+
+        },2000)
     })
 }

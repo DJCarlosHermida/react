@@ -1,6 +1,6 @@
 
 
-const ItemDetail = ( {id, name, img, description, price, Category, stock} ) => {
+const ItemDetail = ( {id, name, img, description, price} ) => {
 
     return (
         <div>
@@ -8,12 +8,7 @@ const ItemDetail = ( {id, name, img, description, price, Category, stock} ) => {
             <img className="imageDetail" src={img} />
             <p>{description}</p>
             <p>Precio: <b>USD {price}</b></p>
-            <p><small><i>Categoría: {Category}</i></small></p>
             <p><small><i>Stock: {stock}</i></small></p>
-
-
-
-            
         </div>
     )
 }

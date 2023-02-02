@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { pedirDatos, pedirItemXId } from "../../helpers/pedirDatos"
+import { pedirItemXId } from "../../helpers/pedirDatos"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
 const ItemDetailContainer = ({itemId}) => {
@@ -10,7 +10,6 @@ const ItemDetailContainer = ({itemId}) => {
 
     useEffect(() => {
         setError(null)
-
 
        pedirItemXId(itemId)
             .then((data) =>{

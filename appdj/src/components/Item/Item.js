@@ -1,6 +1,4 @@
-
-
-const Item = ( {id, stock, name, description, img, price, Category} ) => {
+const Item = ( {id, stock, name, description, img, price, category} ) => {
 
     return (
         <div className="card" >
@@ -9,6 +7,7 @@ const Item = ( {id, stock, name, description, img, price, Category} ) => {
             <p className="price"><b>USD {price}</b></p>
             <button className="btn-VerMas">Ver Detalle</button>
         </div>
+      
     )
 }
 

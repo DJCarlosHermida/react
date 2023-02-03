@@ -9,16 +9,17 @@ export const Navbar = () => {
 
 
                     <a href="https://soundcloud.com/djcarloshermida/sets/cachengue" rel="noreferrer" target="_blank">
-                    <img src="./logoDJ.png" class="header__logo" alt="Logo Dj" title="Logo DJ" />
+                    <img src="./logoDJ.png" class="header__logo" alt="Logo DJ" title="Escuchar en Souncloud" />
                     </a>
 
                     <nav className="header__nav">
-                        <Link className="header__Link" to="/">Inicio</Link>
-                        <Link className="header__Link" to="/nosotros">Nosotros</Link>
-                        <Link className="header__Link" to="/productos">Productos</Link>
-                        <Link className="header__Link" to="/galeria">Galería</Link>
-                        <Link className="header__Link" to="/contacto">Contacto</Link>
-                        <Link className="header__Link" to="/carrito">Carrito</Link>
+                        <Link className="header__Link" to="/inicio">Inicio</Link>
+                        <Link className="header__Link" to="/productos/">Productos</Link>
+                        <Link className="header__Link" to="/productos/LED">Iluminación</Link>
+                        <Link className="header__Link" to="/productos/Parlantes">Audio</Link>
+                        <Link className="header__Link" to="/productos/Microfonos">Micrófonos</Link>
+                        <Link className="header__Link" to="/productos/DJ">DJ</Link>
+                        <Link className="header__Link" to="/productos/Interfaz">Interfaz</Link>
                     </nav>
 
                 </div>

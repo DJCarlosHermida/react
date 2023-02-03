@@ -13,13 +13,13 @@ const ItemListContainer = () => {
         pedirDatos()
             .then( (res) => {
                 if (categoryId) {
-                    setProductos(res.filter(prod => prod.category === categoryId))
+                    setProductos( res.filter(prod => prod.category === categoryId) )
                 } else {
                     setProductos(res)
                 }
             })
             .catch((err) => {
-                console.log(err);
+                console.log(err)
             })
     }, [categoryId])
 

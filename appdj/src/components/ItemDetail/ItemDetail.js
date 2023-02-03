@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
-const ItemDetail = ( {id, name, img, description, price, stock} ) => {
+const ItemDetail = ( {id, name, img, description, price,category, stock} ) => {
 
     const navigate = useNavigate()
 
@@ -22,4 +22,4 @@ const ItemDetail = ( {id, name, img, description, price, stock} ) => {
     )
 }
 
-export default ItemDetail
+export default ItemDetail 

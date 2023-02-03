@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
 import { pedirItemXId } from "../../helpers/pedirDatos"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
 const ItemDetailContainer = ({itemId}) => {
 
     const [item, setItem,] = useState(null)
-    const [error, setError] = useState(null)
-    console.log(item)
+    const { itemId } = useParams()
 
     useEffect(() => {
-        setError(null)
-
        pedirItemXId(itemId)
             .then((data) =>{
                 setItem(data)
@@ -23,7 +21,7 @@ const ItemDetailContainer = ({itemId}) => {
     return (
         <div className="container my-5">
             {
-                error ? error : item && <ItemDetail {...item} />
+                item && <ItemDetail {...item} />
             }
         </div>
     )

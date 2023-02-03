@@ -8,17 +8,20 @@ const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([])
     const { categoryId } = useParams()
-        console.log(categoryId);
 
     useEffect(() => {
         pedirDatos()
-            .then((res) => {
-                setProductos(res)
+            .then( (res) => {
+                if (categoryId) {
+                    setProductos(res.filter(prod => prod.category === categoryId))
+                } else {
+                    setProductos(res)
+                }
             })
             .catch((err) => {
                 console.log(err);
             })
-    }, [])
+    }, [categoryId])
 
     return (
         <div className="container">

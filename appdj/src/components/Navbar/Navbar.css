@@ -47,4 +47,9 @@
 .header .header__container .header__nav .header__Link:hover {
   color: orange;
 }
+
+.title-H2 {
+  text-align: center;
+}
+
 /*# sourceMappingURL=Navbar.css.map */

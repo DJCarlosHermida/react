@@ -1,6 +1,6 @@
 import Item from "../Item/Item"
 
-const ItemList = ({ productos }) => {
+const ItemList = ( { productos } ) => {
 
     return (
         <div className="container my-5">
@@ -8,10 +8,8 @@ const ItemList = ({ productos }) => {
             <hr />
 
             <section className="row my-4">
-                {productos.map((prod) => <Item key={prod.id} {... prod} />
-                )}
+                {productos.map((prod) => <Item key={prod.id} {... prod} />)}
             </section>
-
         </div>
     )
 }

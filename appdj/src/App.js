@@ -5,6 +5,7 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import Inicio from "./components/Inicio/Inicio"
 import { Footer } from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
         <Route path="/" element={ <Inicio /> } />
         <Route path="/productos" element={ <ItemListContainer /> } />
         <Route path="/productos/:categoryId" element={ <ItemListContainer /> } />
-        <Route path="/detail/:itemId" element={ <ItemListContainer /> } />
+        <Route path="/detail/:itemId" element={ <ItemDetailContainer />} />
+
         <Route path="*" element={ <Navigate to={"/"}/> } /> 
       </Routes>
       <Footer />

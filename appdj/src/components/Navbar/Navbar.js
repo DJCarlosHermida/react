@@ -5,7 +5,7 @@ export const Navbar = () => {
 
     return (
             <header className="header">
-                <div className="header__container">
+                <div className="container header__container">
 
 
                     <a href="https://soundcloud.com/djcarloshermida/sets/cachengue" rel="noreferrer" target="_blank">

@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import '../ItemDetail/ItemDetail.scss'
 
 const ItemDetail = ( {id, name, img, description, price, category, stock} ) => {
 
@@ -9,13 +10,14 @@ const ItemDetail = ( {id, name, img, description, price, category, stock} ) => {
     }
 
     return (
-        <div>
+        <div className="container">
             <h2>{name}</h2>
             <img className="imageDetail" src={img} />
+            <br />
+            <p className="container desc">{description}</p>
+            <p className="precioCard">Precio: <b>USD {price}</b></p>
             <small>Categoría: {category}</small>
-            <p>{description}</p>
-            <p>Precio: <b>USD {price}</b></p>
-            <small>Stock: {stock}</small>
+            <p><small>Stock: {stock}</small></p>
 
             <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
             {/* <ItemCount max={stock} /> */}

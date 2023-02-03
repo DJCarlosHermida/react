@@ -2,11 +2,11 @@
 const Inicio = () => {
 
     return (
-        <section className="container my-5 center">
-            <h1>
-                <b>DJCARLOSHERMIDA</b>
+        <section className="section2">
+            <h1 className="animate__animated animate__bounce">
+                <b className="container"><i>DJ CARLOS HERMIDA</i></b>
                 <br />
-                <strong><i>| Para Fiestas |</i></strong>
+                <strong><i className="djh1">| Para Fiestas |</i></strong>
             </h1>
         </section>
     )

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import { pedirItemXId } from "../../helpers/pedirDatos"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
-const ItemDetailContainer = () => {
+const ItemDetailContainer = ({}) => {
 
     const [item, setItem,] = useState(null)
     const { itemId } = useParams()

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
-const ItemDetail = ( {id, name, img, description, price,category, stock} ) => {
+const ItemDetail = ( {id, name, img, description, price, category, stock} ) => {
 
     const navigate = useNavigate()
 
@@ -15,6 +15,7 @@ const ItemDetail = ( {id, name, img, description, price,category, stock} ) => {
             <small>Categoría: {category}</small>
             <p>{description}</p>
             <p>Precio: <b>USD {price}</b></p>
+            <small>Stock: {stock}</small>
 
             <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
             {/* <ItemCount max={stock} /> */}

@@ -14,12 +14,15 @@ export const Navbar = () => {
 
                     <nav className="header__nav">
                         <Link className="header__Link" to="/inicio">Inicio</Link>
+                        <Link className="header__Link" to="/nosotros">Nosotros</Link>
                         <Link className="header__Link" to="/productos/">Productos</Link>
                         <Link className="header__Link" to="/productos/LED">Iluminación</Link>
                         <Link className="header__Link" to="/productos/Parlantes">Audio</Link>
                         <Link className="header__Link" to="/productos/Microfonos">Micrófonos</Link>
                         <Link className="header__Link" to="/productos/DJ">DJ</Link>
                         <Link className="header__Link" to="/productos/Interfaz">Interfaz</Link>
+                        <Link className="header__Link" to="/contacto">Contacto</Link>
+
                     </nav>
 
                 </div>

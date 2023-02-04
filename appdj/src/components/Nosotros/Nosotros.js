@@ -1,5 +1,8 @@
+import dj from './Dj Carlos Hermida  - Pique original.mp3'
+
 
 const Nosotros = () => {
+
 
     return (
         <div className="container my-5">
@@ -21,7 +24,8 @@ const Nosotros = () => {
                     <br/>
                     Luego vino el CD, MP3, y la súper novedad del MP4 "música con video...". Pero siempre el punto de partida con el cual aprendí, fué, es y será el Vinilo.
                     <br/>
-                    Poco a poco fuí armando una marca, un sello. (dididididi djcaaarlos hermida)
+                    Poco a poco fuí armando una marca, un sello. (dididididi djcaaarlos hermida) 
+                    
                     <br/>
                     Trabajé en varios Boliches "discotecas" de Uruguay.
                     <br/>
@@ -38,6 +42,8 @@ const Nosotros = () => {
                     <br/><br/>
             </p>
             <hr/>
+
+            
         </div>
     )
 }

@@ -1,28 +1,32 @@
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useContext, useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
+import { CartContext } from "../../context/CartContext"
 import ItemCount from "../ItemCount/ItemCount"
 import '../ItemDetail/ItemDetail.scss'
 
 const ItemDetail = ( {id, name, img, description, price, category, stock} ) => {
+
+    const { agregarAlCarrito, isInCart} = useContext(CartContext)
+
     const [cantidad, setCantidad] = useState(1)
-
     const navigate = useNavigate()
-
     const handleVolver = () => {
         navigate(-1)
     }
 
     const handleAgregar = () => {
-        console.log(
+        const item = {
             id,
             name,
-            img,
-            description,
-            price,
-            category,
             stock,
-            cantidad
-        )
+            cantidad,
+            price,
+            img,
+            category,
+            description
+        }
+ 
+        agregarAlCarrito(item)
     }
 
     return (
@@ -35,8 +39,12 @@ const ItemDetail = ( {id, name, img, description, price, category, stock} ) => {
             <small>Categoría: {category}</small>
             <p><small>Stock: {stock}</small></p>
 
-            <ItemCount max={stock} cantidad={cantidad} setCantidad={setCantidad} addItem={handleAgregar} />
-            <br />
+            {
+                !isInCart(id) ? <ItemCount max={stock} cantidad={cantidad} setCantidad={setCantidad} addItem={handleAgregar} /> : <Link to="/cart" className="btn btn-success">Terminar la compra</Link>
+            }
+
+            
+            <hr />
 
             <button className="btn btn-outline-primary btn-volver" onClick={handleVolver}>Volver</button>
         </div>

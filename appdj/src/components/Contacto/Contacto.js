@@ -3,21 +3,26 @@ import '../Navbar/Navbar.scss'
 import './Contacto.scss'
 
 const Contacto = () => {
-    const [nombre, setNombre] = useState()
+    const [values, setValues] = useState({
+        nombre: '',
+        email: '',
+        phone: ''
+    })
 
-    const handleNombre = (e) => {
-        console.log(e.target.value)
-        setNombre(e.target.value)
+    const handleInputChange = (e) => {
+        setValues({
+            ...values,
+            [e.target.name] : e.target.value
+        })
     }
+ 
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        console.log('submit', {
-            nombre: nombre, 
-            email: '',
-            phone: '',
-        })
+        console.log('Submit', values)
+
+
     }
 
     return (
@@ -25,9 +30,9 @@ const Contacto = () => {
             <h2 className='productosTitle'>Formulario de contacto</h2>
 
             <form onSubmit={handleSubmit}>
-                <input onChange={handleNombre} value={nombre} type="text" className="form-control my-2"  placeholder="Nombre"></input>
-                <input type="email" className="form-control my-2" placeholder="Email" ></input>
-                <input type="phone" className="form-control my-2" placeholder="Cel" ></input>
+                <input onChange={handleInputChange} value={values.nombre} name="nombre" type="text" className="form-control my-2" placeholder="Nombre"></input>
+                <input onChange={handleInputChange} value={values.email} name="email" type="email" className="form-control my-2" placeholder="Email" ></input>
+                <input onChange={handleInputChange} value={values.phone} name="phone" type="phone" className="form-control my-2" placeholder="Cel" ></input>
                 <hr />
                 <button className='btn btn-outline-success'>Enviar</button>
             </form>

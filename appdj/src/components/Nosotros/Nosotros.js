@@ -1,5 +1,4 @@
-import dj from './Dj Carlos Hermida  - Pique original.mp3'
-
+import './Nosotros.scss'
 
 const Nosotros = () => {
 
@@ -8,8 +7,8 @@ const Nosotros = () => {
         <div className="container my-5">
             
             <br/>
-            <h2 className="title-H2">Sobre Mi...</h2>
-            <p>
+            <h2 className="productosTitle">Sobre Mi...</h2>
+            <p className='bio'>
                 <br/>
             |DJCARLOSHERMIDA|
                     <br/>

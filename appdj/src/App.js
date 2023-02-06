@@ -10,12 +10,13 @@ import Nosotros from "./components/Nosotros/Nosotros"
 import Contacto from "./components/Contacto/Contacto";
 import Cart from "./components/Cart/Cart"
 import { CartProvider } from "./context/CartContext";
+import LoginScreen from "./components/LoginScreen/LoginScreen";
+import { LoginProvider } from "./context/LoginContext";
 
 function App() {
 
-
-
   return (
+    <LoginProvider>
     <CartProvider>
       <BrowserRouter>
         <Navbar />
@@ -27,11 +28,13 @@ function App() {
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<LoginScreen />} />
           <Route path="*" element={<Navigate to={"/"} />} />
         </Routes>
         <Footer />
       </BrowserRouter>
     </CartProvider>
+    </LoginProvider>
   );
 }
 

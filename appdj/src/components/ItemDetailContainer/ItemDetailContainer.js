@@ -14,7 +14,7 @@ const ItemDetailContainer = ({}) => {
                 setItem(data)
             })
             .catch((err) => {
-                setError(err.error)
+                setError(err.setError)
             })
     }, [itemId])
 

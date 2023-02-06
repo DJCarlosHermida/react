@@ -1,34 +1,20 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react"
 
 const MOCK_USERS = [
     {
         email: 'dj@yo.com',
         password: '1234'
-    },
-    {
-        email: 'carlos@el.com',
-        password: '1234'
-    },
-    {
-        email: 'el@tu.com',
-        password: '1234'
     }
-    
 ]
 
- const LoginContext = createContext()
+export const LoginContext = createContext()
 
- const useLoginContext = () => {
-    return useContext(LoginContext)
-}
-
- const LoginProvider = ({children}) => {
+export const LoginProvider = ({children}) => {
     const [user, setUser] = useState({
-        email: null,
+        email: '',
         logged: false,
         error: null
-
-    }) 
+    })
 
     console.log(user);
 
@@ -45,24 +31,23 @@ const MOCK_USERS = [
             setUser({
                 email: null,
                 logged: false,
-                error: 'Datos inválidos'
+                error: 'Datos Incorrectos'
             })
         }
     }
 
-    const logout = () => {
+    const logout = () =>{
         setUser({
-            email: null,
+            email: '',
             logged: false,
             error: null
         })
     }
 
+
     return (
- 
         <LoginContext.Provider value={{user, login, logout}}>
             {children}
         </LoginContext.Provider>
-
     )
 }

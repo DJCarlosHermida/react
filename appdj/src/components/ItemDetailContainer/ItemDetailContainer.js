@@ -6,9 +6,11 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 const ItemDetailContainer = ({}) => {
 
     const [item, setItem, setError] = useState(null)
+    const [loading, setLoading] = useState(true)
     const { itemId } = useParams()
 
     useEffect(() => {
+        setLoading(true)
        pedirItemXId( Number(itemId))
             .then((data) =>{
                 setItem(data)
@@ -16,12 +18,16 @@ const ItemDetailContainer = ({}) => {
             .catch((err) => {
                 setError(err.setError)
             })
+            .finally(() => {
+                setLoading(false)
+            })
+
     }, [itemId])
 
     return (
         <div className="container my-5">
             {
-                item && <ItemDetail {...item} />
+                loading ? <h2>Cargando...</h2> : <ItemDetail {...item} />
             }
         </div>
     )

@@ -38,6 +38,7 @@ const ItemDetail = ( {id, name, img, description, price, category, stock} ) => {
             <p className="precioCard">Precio: <b>USD {price}</b></p>
             <small>Categoría: {category}</small>
             <p><small>Stock: {stock}</small></p>
+            { stock < 5 && <h6>Últimas unidades</h6> }
 
             {
                 !isInCart(id) ? <ItemCount max={stock} cantidad={cantidad} setCantidad={setCantidad} addItem={handleAgregar} /> : <Link to="/cart" className="btn btn-success">Terminar la compra</Link>

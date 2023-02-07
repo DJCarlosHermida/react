@@ -24,6 +24,10 @@ const ItemDetailContainer = ({}) => {
 
     }, [itemId])
 
+    if (loading) {
+        
+    }
+
     return (
         <div className="container my-5">
             {

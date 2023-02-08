@@ -1,28 +1,37 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { pedirItemXId } from "../../helpers/pedirDatos"
 import ItemDetail from "../ItemDetail/ItemDetail"
-import { doc, getDoc, query, where } from "firebase/firestore"
-import { db } from "../../firebase/config"
 
 const ItemDetailContainer = ({}) => {
 
-    const [item, setItem] = useState(null)
-    
+    const [item, setItem, setError] = useState(null)
+    const [loading, setLoading] = useState(true)
     const { itemId } = useParams()
 
     useEffect(() => {
-        const docRef = doc( db, "productos", itemId )
-        getDoc(docRef)
-        .then(doc => {
-            setItem( {...doc.data(), id: doc.id} )
-        })
-        
+        setLoading(true)
+       pedirItemXId( Number(itemId))
+            .then((data) =>{
+                setItem(data)
+            })
+            .catch((err) => {
+                setError(err.setError)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
+
     }, [itemId])
+
+    if (loading) {
+        
+    }
 
     return (
         <div className="container my-5">
             {
-                item && <ItemDetail {...item} />
+                loading ? <h2>Cargando...</h2> : <ItemDetail {...item} />
             }
         </div>
     )

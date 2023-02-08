@@ -12,6 +12,7 @@ import Cart from "./components/Cart/Cart"
 import { CartProvider } from "./context/CartContext";
 import LoginScreen from "./components/LoginScreen/LoginScreen";
 import { LoginProvider } from "./context/LoginContext";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="/login" element={<LoginScreen />} />
             <Route path="*" element={<Navigate to={"/"} />} />
           </Routes>

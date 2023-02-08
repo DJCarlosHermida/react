@@ -42,6 +42,8 @@ const Cart = () => {
 
 
             <button className="btn btn-outline-danger" onClick={emptycart}>Vaciar Carrito</button>
+            <Link className="btn btn-outline-success my-4 mx-3" to="/checkout">Terminar compra</Link>
+
 
 
 

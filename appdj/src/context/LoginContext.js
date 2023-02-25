@@ -43,8 +43,7 @@ export const LoginProvider = ({children}) => {
             error: null
         })
     }
-
-
+    
     return (
         <LoginContext.Provider value={{user, login, logout}}>
             {children}

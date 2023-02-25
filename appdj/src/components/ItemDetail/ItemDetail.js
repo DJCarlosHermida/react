@@ -43,8 +43,6 @@ const ItemDetail = ( {id, name, img, description, price, category, stock} ) => {
             {
                 !isInCart(id) ? <ItemCount max={stock} cantidad={cantidad} setCantidad={setCantidad} addItem={handleAgregar} /> : <Link to="/cart" className="btn btn-success">Terminar la compra</Link>
             }
-
-            
             <hr />
 
             <button className="btn btn-outline-primary btn-volver" onClick={handleVolver}>Volver</button>

@@ -15,13 +15,11 @@ const Contacto = () => {
             [e.target.name] : e.target.value
         })
     }
- 
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
         console.log('Submit', values)
-
 
     }
 
@@ -36,10 +34,7 @@ const Contacto = () => {
                 <hr />
                 <button className='btn btn-outline-success'>Enviar</button>
             </form>
-
-
         </div>
-
     )
 }
 

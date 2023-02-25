@@ -1,5 +1,3 @@
-
-
 export const Usuario2 = ({nombre, curso, edad}) => {
 
     return (

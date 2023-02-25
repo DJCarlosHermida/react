@@ -42,8 +42,6 @@ const Cart = () => {
             <br />
             <Link to="/productos" className="btn btn-outline-danger">Volver</Link>
         </div>
-        
-        
 
     )
 }

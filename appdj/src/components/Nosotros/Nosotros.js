@@ -1,8 +1,6 @@
 import './Nosotros.scss'
 
 const Nosotros = () => {
-
-
     return (
         <div className="container my-5">
             
@@ -41,8 +39,6 @@ const Nosotros = () => {
                     <br/><br/>
             </p>
             <hr/>
-
-            
         </div>
     )
 }

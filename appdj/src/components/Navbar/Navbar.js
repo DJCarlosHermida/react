@@ -7,12 +7,9 @@ export const Navbar = () => {
     return (
             <header className="header">
                 <div className="container  header__container">
-
-
                     <a href="https://soundcloud.com/djcarloshermida/sets/cachengue" rel="noreferrer" target="_blank">
                     <img src="./logoDJ.png" class="header__logo" alt="Logo DJ" title="Escuchar en Souncloud" />
                     </a>
-
                     <nav className="header__nav">
                         <Link className="header__Link" to="/inicio">Inicio</Link>
                         <Link className="header__Link" to="/nosotros">Nosotros</Link>
@@ -24,12 +21,8 @@ export const Navbar = () => {
                         <Link className="header__Link" to="/productos/interfaz">Interfaz</Link>
                         <Link className="header__Link" to="/contacto">Contacto</Link>
                         <CartWidget />
-                        
-
                     </nav>
-
                 </div>
             </header>
-
     )
 }

@@ -1,6 +1,14 @@
 import { useState } from "react"
+import { Link, Navigate } from "react-router-dom"
+import { useCardContext as useCartContext } from "../../context/CartContext"
+import { db } from "../../firebase/config"
+import { collection, addDoc } from "firebase/firestore"
 
 const Checkout = () => {
+    const { cart,totalCart, emptycart } = useCartContext()
+
+    const [orderId, setOrderId] = useState(null)
+
     const [values, setValues] = useState({
         nombre: '',
         edad: '',
@@ -16,7 +24,52 @@ const Checkout = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(values);
+
+        if (values.nombre.length < 3) {
+            alert("Nombre Inválido")
+            return
+        }
+
+        if (values.edad.length < 1) {
+            alert("Edad incorrecta")
+            return
+        }
+
+        if (values.email.length < 2) {
+            alert("Email Inválido")
+            return
+        }
+
+        const orden = {
+            cliente: values,
+            items: cart,
+            total: totalCart()
+        }
+     
+        const orderRef = collection(db, 'orders')
+
+        addDoc(orderRef, orden)
+            .then((doc) => {
+                setOrderId(doc.id)
+                emptycart()
+            })
+            .catch((error) => console.log(error) )
+    }
+
+    if (orderId) {
+        return (
+            <div className="container my-5">
+                <h2>Compra Realizada Con Éxito</h2>
+                <hr />
+                <p>Orden De Compra: {orderId} </p>
+
+                <Link to="/">Volver</Link>
+            </div>
+        )
+    }
+
+    if (cart.length === 0) {
+        return <Navigate to="/" />
     }
 
     return (
@@ -24,6 +77,7 @@ const Checkout = () => {
             <h2 className="container my-5">Terminar Compra</h2>
             <hr />
             <form onSubmit={handleSubmit} className="container">
+
                 <input
                     className="form-control my-2"
                     onChange={handleInputChange}
@@ -52,7 +106,6 @@ const Checkout = () => {
                 />
 
                 <button className="btn btn-outline-success">Enviar</button>
-
 
             </form>
 

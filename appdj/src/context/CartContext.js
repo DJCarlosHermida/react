@@ -1,8 +1,6 @@
 import { createContext, useContext,  useState, useEffect } from "react";
 
 export const CartContext = createContext()
-
-
 export const useCardContext = () => {
   return useContext(CartContext)
 }

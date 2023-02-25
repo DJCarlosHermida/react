@@ -14,11 +14,9 @@ const Cart = () => {
                 <hr />
                 <p>Para comprar primero debes agregar algo</p>
                 <Link to="/productos" className="btn btn-outline-danger">Volver</Link>
-
             </div>
         )
     }
-
 
     return (
         <div className="container my-4" >
@@ -39,21 +37,13 @@ const Cart = () => {
             }
 
             <h4>Total: USD {totalCart()} </h4>
-
-
             <button className="btn btn-outline-danger" onClick={emptycart}>Vaciar Carrito</button>
             <Link className="btn btn-outline-success my-4 mx-3" to="/checkout">Terminar compra</Link>
-
-
-
-
-
-
-
-
-
-
+            <br />
+            <Link to="/productos" className="btn btn-outline-danger">Volver</Link>
         </div>
+        
+        
 
     )
 }

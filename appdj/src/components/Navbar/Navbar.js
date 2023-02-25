@@ -17,11 +17,11 @@ export const Navbar = () => {
                         <Link className="header__Link" to="/inicio">Inicio</Link>
                         <Link className="header__Link" to="/nosotros">Nosotros</Link>
                         <Link className="header__Link" to="/productos/">Productos</Link>
-                        <Link className="header__Link" to="/productos/LED">Iluminación</Link>
-                        <Link className="header__Link" to="/productos/Parlantes">Audio</Link>
-                        <Link className="header__Link" to="/productos/Microfonos">Micrófonos</Link>
-                        <Link className="header__Link" to="/productos/DJ">DJ</Link>
-                        <Link className="header__Link" to="/productos/Interfaz">Interfaz</Link>
+                        <Link className="header__Link" to="/productos/iluminacion">Iluminación</Link>
+                        <Link className="header__Link" to="/productos/parlantes">Audio</Link>
+                        <Link className="header__Link" to="/productos/microfonos">Micrófonos</Link>
+                        <Link className="header__Link" to="/productos/dj">DJ</Link>
+                        <Link className="header__Link" to="/productos/interfaz">Interfaz</Link>
                         <Link className="header__Link" to="/contacto">Contacto</Link>
                         <CartWidget />
                         

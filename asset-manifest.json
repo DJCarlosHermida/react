@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DJCarlosHermida/proyecto_react/static/css/main.ab20f3aa.css",
+    "main.js": "/DJCarlosHermida/proyecto_react/static/js/main.799bda23.js",
+    "index.html": "/DJCarlosHermida/proyecto_react/index.html",
+    "main.ab20f3aa.css.map": "/DJCarlosHermida/proyecto_react/static/css/main.ab20f3aa.css.map",
+    "main.799bda23.js.map": "/DJCarlosHermida/proyecto_react/static/js/main.799bda23.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab20f3aa.css",
+    "static/js/main.799bda23.js"
+  ]
+}

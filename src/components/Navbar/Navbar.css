@@ -1,0 +1,63 @@
+.header {
+  background: linear-gradient(to left, rgba(97, 13, 13, 0.733), black);
+  padding: 30px 10px;
+}
+.header .header__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__container .header__logo {
+  color: whitesmoke;
+  width: 60px;
+}
+.header .header__container .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.header .header__container .header__nav .header__Link {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 17px;
+}
+.header .header__container .header__nav .header__Link:hover {
+  color: orange;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section2 {
+  display: grid;
+  background-image: url(../Inicio/controlador.jpg);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section2 h1 {
+  font-size: 25px;
+  text-align: center;
+  color: whitesmoke;
+  animation-duration: 3s;
+  animation-name: aparecer;
+}
+
+.djh1 {
+  font-size: 46px;
+}/*# sourceMappingURL=Navbar.css.map */

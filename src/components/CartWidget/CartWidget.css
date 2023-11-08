@@ -1,0 +1,16 @@
+.cart-widget {
+  color: whitesmoke;
+  font-size: 25px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out all;
+}
+
+.cart-widget:hover {
+  color: orange;
+}
+
+.cart-widget-active {
+  visibility: visible;
+  opacity: 1;
+}/*# sourceMappingURL=CartWidget.css.map */

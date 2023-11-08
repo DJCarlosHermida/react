@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,SAAS,EAAE,MAAM;EACjB,gBAAgB,EAAE,SAAS;EAC3B,MAAM,EAAE,MAAO;CAClB",
-    "sources": [
-        "Contenedor.scss"
-    ],
-    "names": [],
-    "file": "Contenedor.css"
-}

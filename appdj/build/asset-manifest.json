@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/DJCarlosHermida/proyecto_react.git/static/css/main.b4b2def8.css",
+    "main.js": "/DJCarlosHermida/proyecto_react.git/static/js/main.7a158f59.js",
+    "static/media/controlador.jpg": "/DJCarlosHermida/proyecto_react.git/static/media/controlador.5b44dd9b80853b99dbf3.jpg",
+    "index.html": "/DJCarlosHermida/proyecto_react.git/index.html",
+    "main.b4b2def8.css.map": "/DJCarlosHermida/proyecto_react.git/static/css/main.b4b2def8.css.map",
+    "main.7a158f59.js.map": "/DJCarlosHermida/proyecto_react.git/static/js/main.7a158f59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4b2def8.css",
+    "static/js/main.7a158f59.js"
+  ]
+}

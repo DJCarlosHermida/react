@@ -12,9 +12,9 @@ const Nosotros = () => {
                     <br/>
                     <i>Nací en 1985, Trinidad, Flores. Uruguay.</i>
                      <br/>
-                    Apacionado por la música comencé a mezclar desde muy temprano. Solía escuchar los 20 principales; Con un grabador viejo a <i>Cassette</i>
+                    Apacionado por la música comencé a mezclar desde muy temprano. Solía escuchar los 20 principales; Con un grabador viejo a <i>Cassette </i>
                     grababa partes de las canciones <i>"ejemplo"</i> - la canción nº 12 iba primero, luego esperaba hasta el día siguiente para grabar la canción nº20 que iba 2da.
-                     Luego la nº 1 iba 3era. y así hasta copletar el <i>Cassette</i>. ("<b>Entre canción y canción luego de pausar la grabación, con una lapicera retrodecía 2 vueltas para que cuando iniciara la próxima canción hiciera un efecto de bajada
+                     Luego la nº 1 iba 3era. y así hasta completar el <i>Cassette</i>. ("<b>Entre canción y canción luego de pausar la grabación, con una lapicera retrodecía 2 vueltas para que cuando iniciara la próxima canción hiciera un efecto de bajada
                         </b> ")
                     <br/>
                     "aún tengo esos cassettes"

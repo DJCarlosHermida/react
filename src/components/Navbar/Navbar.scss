@@ -10,8 +10,17 @@
         align-items: center;
 
         .header__logo {
+            background-image: url(../Logo/logo.png);
             color: whitesmoke;
-            width: 60px;
+            background-color: orange;
+            border-radius: 20px;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            background-size: cover;
+            background-repeat:  no-repeat;
+            background-position: center;
+
         }
             .header__nav {
                 display: flex;

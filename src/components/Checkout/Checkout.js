@@ -30,7 +30,7 @@ const Checkout = () => {
             return
         }
 
-        if (values.edad.length < 1) {
+        if (values.edad.length < 2) {
             alert("Edad incorrecta")
             return
         }

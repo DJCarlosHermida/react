@@ -1,15 +1,14 @@
 import './Navbar.scss'
 import { Link } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
+import Logo from '../Logo/Logo'
 
 export const Navbar = () => {
 
     return (
             <header className="header">
                 <div className="container  header__container">
-                    <a href="https://soundcloud.com/djcarloshermida/sets/cachengue" rel="noreferrer" target="_blank">
-                    <img src="./logoDJ.png" class="header__logo" alt="Logo DJ" title="Escuchar en Souncloud" />
-                    </a>
+                    <Logo />
                     <nav className="header__nav">
                         <Link className="header__Link" to="/inicio">Inicio</Link>
                         <Link className="header__Link" to="/nosotros">Nosotros</Link>

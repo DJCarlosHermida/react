@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/DJCarlosHermida/proyecto_react.git/static/css/main.af0ac7e4.css",
-    "main.js": "/DJCarlosHermida/proyecto_react.git/static/js/main.741996dd.js",
-    "static/media/controlador.jpg": "/DJCarlosHermida/proyecto_react.git/static/media/controlador.5b44dd9b80853b99dbf3.jpg",
-    "index.html": "/DJCarlosHermida/proyecto_react.git/index.html",
-    "main.af0ac7e4.css.map": "/DJCarlosHermida/proyecto_react.git/static/css/main.af0ac7e4.css.map",
-    "main.741996dd.js.map": "/DJCarlosHermida/proyecto_react.git/static/js/main.741996dd.js.map"
+    "main.css": "/react/static/css/main.eebfe7e5.css",
+    "main.js": "/react/static/js/main.a7015e96.js",
+    "static/media/controlador.jpg": "/react/static/media/controlador.5b44dd9b80853b99dbf3.jpg",
+    "static/media/logo.png": "/react/static/media/logo.792b5aa97d90b5cf369e.png",
+    "index.html": "/react/index.html",
+    "main.eebfe7e5.css.map": "/react/static/css/main.eebfe7e5.css.map",
+    "main.a7015e96.js.map": "/react/static/js/main.a7015e96.js.map"
   },
   "entrypoints": [
-    "static/css/main.af0ac7e4.css",
-    "static/js/main.741996dd.js"
+    "static/css/main.eebfe7e5.css",
+    "static/js/main.a7015e96.js"
   ]
 }

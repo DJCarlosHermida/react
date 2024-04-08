@@ -3,14 +3,13 @@
     padding: 30px 10px;
 
     .header__container {
-        max-width: 1000px;
+        max-width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .header__logo {
-            background-image: url(../Logo/logo.png);
             color: whitesmoke;
             background-color: orange;
             border-radius: 20px;
@@ -23,17 +22,19 @@
 
         }
             .header__nav {
+                
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                gap: 15px;
+                gap: 10px;
+
 
                 .header__Link{
                     text-transform:  uppercase;
                     font-weight: 700;
                     color: whitesmoke;
                     text-decoration: none;
-                    font-size: 17px;
+                    font-size: 14px;
                 }
                 .header__Link:hover {
                     color: orange;

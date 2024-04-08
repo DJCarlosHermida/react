@@ -1,9 +1,9 @@
-import '../Logo/Logo'
+import './Logo.scss'
 
 const Logo = () => {
     return (
         <a href="https://soundcloud.com/djcarloshermida/sets/cachengue" rel="noreferrer" target="_blank">
-            <img src="./logo.png" className="header__logo" alt="Logo" title="Escuchar en Souncloud" />
+            <img src="https://djcarloshermida.com.uy/img/logo2.png" className="__logo"  alt="Logo" title="Escuchar en Souncloud" />
         </a>
     )
 }

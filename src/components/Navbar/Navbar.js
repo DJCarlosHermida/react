@@ -1,13 +1,13 @@
 import './Navbar.scss'
 import { Link } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
-import Logo from '../Logo/Logo'
+import Logo from '../Logo/Logo.js'
 
 export const Navbar = () => {
 
     return (
             <header className="header">
-                <div className="container  header__container">
+                <div className="header__container">
                     <Logo />
                     <nav className="header__nav">
                         <Link className="header__Link" to="/inicio">Inicio</Link>

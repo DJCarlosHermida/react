@@ -8,9 +8,9 @@ export const Navbar = () => {
     return (
             <header className="header">
                 <div className="header__container">
-                    <Logo />
+                    <Logo className="animate__animated animate__fadeInUp" />
                     <nav className="header__nav">
-                        <Link className="header__Link" to="/inicio">Inicio</Link>
+                        <Link className="header__Link" to="/inicio">Home</Link>
                         <Link className="header__Link" to="/nosotros">Nosotros</Link>
                         <Link className="header__Link" to="/productos/">Productos</Link>
                         <Link className="header__Link" to="/productos/iluminacion">Iluminación</Link>

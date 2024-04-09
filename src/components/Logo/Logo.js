@@ -1,4 +1,5 @@
 import './Logo.scss'
+import '../Navbar/Navbar.scss'
 
 const Logo = () => {
     return (

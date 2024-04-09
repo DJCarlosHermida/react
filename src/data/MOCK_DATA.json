@@ -391,7 +391,7 @@
         "stock": 8,
         "name": "Cabeza Movil Pr Lighting Junior Smartspot 150",
         "description": "Cabeza Móvil JNR-8293 SMARTSPOT 150 Fuente de luz Un motor LED blanco de 150W , 7500K , 50000hrs Voltaje de entrada CA 100-240 V 50/60 Hz El consumo de energía 225W ángulo de luz Ángulo de proyección de 15° Foco eléctrico lineal Color 1 rueda de color con 7 colores dicroicos más abierto (modo de medio color disponible) Efecto de arco iris de dirección variable con velocidad ajustable gobos 1 rueda de gobos giratoria con 6 gobos de vidrio giratorios e intercambiables más con velocidad ajustable, efecto de corriente, efecto difuminado y giratorio en sentido horario o antihorario 1 rueda de gobos estáticos con 8 gobos más abiertos con efecto dithering Superposición de gobos (transformación de gobos) , indexación de gobos Prisma Prisma de 3 facetas con velocidad y dirección variables, indexación de prisma estroboscópico Obturador LED de alta velocidad de 25 T/s/efecto estroboscópico con velocidad variable Estroboscópico variable/aleatorio preestablecido y efecto de pulso de atenuación Atenuación 0-100% Atenuación LED lineal suave Otras funciones Resolución suave, rápida y precisa para el movimiento PAN/TILT con operación de bajo ruido Sistema receptor inalámbrico incorporado (opcional) Protección de señal de entrada blindada para una señal estable sin interferencias Programas automáticos Control DMX512, maestro-esclavo o funcionamiento automático, RDM disponible, Art-NET (opcional) Canales 14/22 canales DMX USITT DMX-512 Alojamiento resistencia a altas temperaturas de plásticos de ingeniería y aluminio fundido , IP20 Peso neto 8,2 kg",
-        "img": "https://www.google.com.uy/url?sa=i&url=https%3A%2F%2Fwww.palaciodelamusica.com.uy%2Fcatalogo%2Fcabeza-movil-pr-lighting-junior-magiczoom-1915fb_JNR8247_JNR8247&psig=AOvVaw1MUm8MsC93Yqv5Gn-XkPeI&ust=1697200836466000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCMCcvObD8IEDFQAAAAAdAAAAABAD",
+        "img": "https://f.fcdn.app/imgs/207b34/www.palaciodelamusica.com.uy/pmusuy/474e/webp/catalogo/JNR8247-JNR8247_1/460x460/cabeza-movil-pr-lighting-junior-magiczoom-1915fb-cabeza-movil-pr-lighting-junior-magiczoom-1915fb.jpg",
         "price": 850,
         "category": "LED"
     },
@@ -424,6 +424,33 @@
     },
     {
         "id": 48,
+        "stock": 168,
+        "name": "Cabeza Movil Big Dipper Lm30",
+        "description": "Efecto barre pista LED de 8 rayos multicolor concentrados. Proyecta 8 rayos de 3W cada uno, divididos en 2 barras, que producen diferentes secuencias y cruces dinámicos al ritmo de la música o controlados con consola, además de ir barriendo en 150°, generando un posicionamiento a lo largo de toda la pista. 8 LUMEN LED´s de 3W cada uno (2 rojos, 2 verdes, 2 azules y 2 blancos). Angulo: 4,5°. Rítmico con sensor auto-ajustable. Equipo ideal para uso estacionario en grandes pistas de baile o fondos de escenario. 50.000 horas de duración. Controlable Vía DMX-512 en modo 7 o13 canales. Display multifuncional. Consumo: 45 Watts. Dimensiones: mm.Peso: 2,6 Kg",
+        "img": "https://f.fcdn.app/imgs/e079d7/www.palaciodelamusica.com.uy/pmusuy/9acd/webp/catalogo/LM30-LM30_1/2000-2000/cabeza-movil-big-dipper-lm30-cabeza-movil-big-dipper-lm30.jpg",
+        "price": 115,
+        "category": "LED"
+    },
+    {
+        "id": 49,
+        "stock": 168,
+        "name": "Cabeza Movil Big Dipper Lm30",
+        "description": "Efecto barre pista LED de 8 rayos multicolor concentrados. Proyecta 8 rayos de 3W cada uno, divididos en 2 barras, que producen diferentes secuencias y cruces dinámicos al ritmo de la música o controlados con consola, además de ir barriendo en 150°, generando un posicionamiento a lo largo de toda la pista. 8 LUMEN LED´s de 3W cada uno (2 rojos, 2 verdes, 2 azules y 2 blancos). Angulo: 4,5°. Rítmico con sensor auto-ajustable. Equipo ideal para uso estacionario en grandes pistas de baile o fondos de escenario. 50.000 horas de duración. Controlable Vía DMX-512 en modo 7 o13 canales. Display multifuncional. Consumo: 45 Watts. Dimensiones: mm.Peso: 2,6 Kg",
+        "img": "https://f.fcdn.app/imgs/e079d7/www.palaciodelamusica.com.uy/pmusuy/9acd/webp/catalogo/LM30-LM30_1/2000-2000/cabeza-movil-big-dipper-lm30-cabeza-movil-big-dipper-lm30.jpg",
+        "price": 115,
+        "category": "LED"
+    },
+    {
+        "id": 50,
+        "stock": 168,
+        "name": "Cabeza Movil Big Dipper Lm30",
+        "description": "Efecto barre pista LED de 8 rayos multicolor concentrados. Proyecta 8 rayos de 3W cada uno, divididos en 2 barras, que producen diferentes secuencias y cruces dinámicos al ritmo de la música o controlados con consola, además de ir barriendo en 150°, generando un posicionamiento a lo largo de toda la pista. 8 LUMEN LED´s de 3W cada uno (2 rojos, 2 verdes, 2 azules y 2 blancos). Angulo: 4,5°. Rítmico con sensor auto-ajustable. Equipo ideal para uso estacionario en grandes pistas de baile o fondos de escenario. 50.000 horas de duración. Controlable Vía DMX-512 en modo 7 o13 canales. Display multifuncional. Consumo: 45 Watts. Dimensiones: mm.Peso: 2,6 Kg",
+        "img": "https://f.fcdn.app/imgs/e079d7/www.palaciodelamusica.com.uy/pmusuy/9acd/webp/catalogo/LM30-LM30_1/2000-2000/cabeza-movil-big-dipper-lm30-cabeza-movil-big-dipper-lm30.jpg",
+        "price": 115,
+        "category": "LED"
+    },
+    {
+        "id": 51,
         "stock": 168,
         "name": "Cabeza Movil Big Dipper Lm30",
         "description": "Efecto barre pista LED de 8 rayos multicolor concentrados. Proyecta 8 rayos de 3W cada uno, divididos en 2 barras, que producen diferentes secuencias y cruces dinámicos al ritmo de la música o controlados con consola, además de ir barriendo en 150°, generando un posicionamiento a lo largo de toda la pista. 8 LUMEN LED´s de 3W cada uno (2 rojos, 2 verdes, 2 azules y 2 blancos). Angulo: 4,5°. Rítmico con sensor auto-ajustable. Equipo ideal para uso estacionario en grandes pistas de baile o fondos de escenario. 50.000 horas de duración. Controlable Vía DMX-512 en modo 7 o13 canales. Display multifuncional. Consumo: 45 Watts. Dimensiones: mm.Peso: 2,6 Kg",

@@ -6,49 +6,57 @@
         max-width: 100%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
+        justify-items: center;
         align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
 
         .header__logo {
             color: whitesmoke;
             background-color: orange;
             border-radius: 20px;
-            justify-content: center;
             justify-items: center;
             align-items: center;
             background-size: cover;
-            background-repeat:  no-repeat;
+            background-repeat: no-repeat;
             background-position: center;
 
         }
-            .header__nav {
-                
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 10px;
+
+        .header__nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
 
 
-                .header__Link{
-                    text-transform:  uppercase;
-                    font-weight: 700;
-                    color: whitesmoke;
-                    text-decoration: none;
-                    font-size: 14px;
-                }
-                .header__Link:hover {
-                    color: orange;
-                }
-
+            .header__Link {
+                text-transform: uppercase;
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
             }
+
+            .header__Link:hover {
+                color: orange;
+            }
+
         }
     }
+}
 
 @keyframes aparecer {
     0% {
-        opacity: 0; }
+        opacity: 0;
+    }
+
     100% {
-        opacity: 1; } }
+        opacity: 1;
+    }
+}
 
 .section2 {
     display: grid;
@@ -59,15 +67,19 @@
     height: 75vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; }
-    .section2 h1 {
-        font-size: 25px;
-        text-align: center;
-        color: whitesmoke;
-        animation-duration: 3s;
-        animation-name: aparecer; 
+    background-position: center;
+}
+
+.section2 h1 {
+    font-size: 25px;
+    text-align: center;
+    color: whitesmoke;
+    animation-duration: 3s;
+    animation-name: aparecer;
 }
 
 .djh1 {
     font-size: 46px;
 }
+
+/* MENÚ DESPLEGABLE */ 

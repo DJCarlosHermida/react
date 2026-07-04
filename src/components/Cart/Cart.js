@@ -1,11 +1,17 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
+import { LoginContext } from "../../context/LoginContext"
 import { BsTrash } from "react-icons/bs"
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
 
 const Cart = () => {
 
     const { cart, emptycart, totalCart, removeItem } = useContext(CartContext)
+    const { user } = useContext(LoginContext)
+
+    if (!user.logged) {
+        return <Navigate to="/login" state={{ from: '/cart' }} replace />
+    }
 
     if (cart.length === 0) {
         return (

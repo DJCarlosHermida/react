@@ -1,7 +1,7 @@
 import { createContext, useContext,  useState, useEffect } from "react";
 
 export const CartContext = createContext()
-export const useCardContext = () => {
+export const useCartContext = () => {
   return useContext(CartContext)
 }
 

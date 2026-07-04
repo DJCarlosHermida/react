@@ -12,4 +12,18 @@
         border-radius: 20px;
         background-color: whitesmoke;
     }
+
+    .login-screen__divider {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &::before,
+        &::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #ccc;
+        }
+    }
 }

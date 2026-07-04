@@ -1,11 +1,13 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 import { Link, Navigate } from "react-router-dom"
-import { useCardContext as useCartContext } from "../../context/CartContext"
+import { useCartContext } from "../../context/CartContext"
+import { LoginContext } from "../../context/LoginContext"
 import { db } from "../../firebase/config"
 import { collection, addDoc } from "firebase/firestore"
 
 const Checkout = () => {
-    const { cart,totalCart, emptycart } = useCartContext()
+    const { cart, totalCart, emptycart } = useCartContext()
+    const { user } = useContext(LoginContext)
 
     const [orderId, setOrderId] = useState(null)
 
@@ -68,12 +70,16 @@ const Checkout = () => {
         )
     }
 
+    if (!user.logged) {
+        return <Navigate to="/login" state={{ from: '/checkout' }} replace />
+    }
+
     if (cart.length === 0) {
         return <Navigate to="/" />
     }
 
     return (
-        <div classname="container my-5">
+        <div className="container my-5">
             <h2 className="container my-5">Terminar Compra</h2>
             <hr />
             <form onSubmit={handleSubmit} className="container">

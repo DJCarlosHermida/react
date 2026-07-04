@@ -1,20 +1,27 @@
 import { useContext, useState } from "react"
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useNavigate, useLocation } from "react-router-dom"
 import { CartContext } from "../../context/CartContext"
+import { LoginContext } from "../../context/LoginContext"
 import ItemCount from "../ItemCount/ItemCount"
 import '../ItemDetail/ItemDetail.scss'
 
 const ItemDetail = ( {id, name, img, description, price, category, stock} ) => {
 
-    const { agregarAlCarrito, isInCart} = useContext(CartContext)
-
+    const { agregarAlCarrito, isInCart } = useContext(CartContext)
+    const { user } = useContext(LoginContext)
     const [cantidad, setCantidad] = useState(1)
     const navigate = useNavigate()
+    const location = useLocation()
+
     const handleVolver = () => {
         navigate(-1)
     }
 
     const handleAgregar = () => {
+        if (!user.logged) {
+            navigate('/login', { state: { from: location.pathname } })
+            return
+        }
         const item = {
             id,
             name,
@@ -25,7 +32,6 @@ const ItemDetail = ( {id, name, img, description, price, category, stock} ) => {
             category,
             description
         }
- 
         agregarAlCarrito(item)
     }
 

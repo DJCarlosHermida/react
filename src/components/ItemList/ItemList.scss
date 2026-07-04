@@ -1,0 +1,30 @@
+.productos-list {
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.5rem 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: clamp(1.35rem, 3vw, 1.65rem);
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+
+    &__count {
+        margin: 0;
+        font-size: 0.88rem;
+        color: #777;
+    }
+
+    &__empty {
+        text-align: center;
+        padding: 2rem 1rem;
+        color: #666;
+        font-size: 1rem;
+    }
+}

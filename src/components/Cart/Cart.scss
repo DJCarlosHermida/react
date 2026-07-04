@@ -233,6 +233,13 @@
         color: #333;
     }
 
+    &__stock-notice {
+        flex-basis: 100%;
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: #c82333;
+    }
+
     &__unit-price {
         color: #666;
     }

@@ -10,8 +10,21 @@ const init = JSON.parse(localStorage.getItem('cart')) || []
 export const CartProvider = ({children}) => {
     const [cart, setCart] = useState(init)
 
-    const agregarAlCarrito = (Item) => {
-      setCart([...cart, Item])
+    const agregarAlCarrito = (item) => {
+      const existing = cart.find((i) => i.id === item.id)
+      if (existing) {
+        const nuevaCantidad = Math.min(
+          existing.cantidad + item.cantidad,
+          item.stock ?? existing.stock
+        )
+        setCart(
+          cart.map((i) =>
+            i.id === item.id ? { ...i, cantidad: nuevaCantidad } : i
+          )
+        )
+        return
+      }
+      setCart([...cart, item])
     }
 
     const removeItem = (id) => {

@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { CartContext } from "../../context/CartContext"
 import { LoginContext } from "../../context/LoginContext"
 import { BsTrash, BsCart } from "react-icons/bs"
@@ -9,7 +9,18 @@ const Cart = () => {
     const { cart, emptycart, totalCart, removeItem, updateItemQuantity } = useContext(CartContext)
     const { user } = useContext(LoginContext)
 
+    const [stockNoticeId, setStockNoticeId] = useState(null)
+
     const itemCount = cart.reduce((sum, item) => sum + item.cantidad, 0)
+
+    const handleIncrease = (item) => {
+        if (item.cantidad >= item.stock) {
+            setStockNoticeId(item.id)
+            return
+        }
+        setStockNoticeId(null)
+        updateItemQuantity(item.id, item.cantidad + 1)
+    }
 
     if (cart.length === 0) {
         return (
@@ -86,7 +97,10 @@ const Cart = () => {
                                                     <button
                                                         type="button"
                                                         className="cart-item__qty-btn cart-item__qty-btn--minus"
-                                                        onClick={() => updateItemQuantity(item.id, item.cantidad - 1)}
+                                                        onClick={() => {
+                                                            setStockNoticeId(null)
+                                                            updateItemQuantity(item.id, item.cantidad - 1)
+                                                        }}
                                                         aria-label={item.cantidad === 1 ? "Quitar del carrito" : "Quitar una unidad"}
                                                     >
                                                         −
@@ -97,13 +111,17 @@ const Cart = () => {
                                                     <button
                                                         type="button"
                                                         className="cart-item__qty-btn cart-item__qty-btn--plus"
-                                                        onClick={() => updateItemQuantity(item.id, item.cantidad + 1)}
-                                                        disabled={item.cantidad >= item.stock}
+                                                        onClick={() => handleIncrease(item)}
                                                         aria-label="Agregar una unidad"
                                                     >
                                                         +
                                                     </button>
                                                 </div>
+                                                {stockNoticeId === item.id && (
+                                                    <span className="cart-item__stock-notice" role="status">
+                                                        Stock máximo alcanzado ({item.stock} unidades)
+                                                    </span>
+                                                )}
                                                 <span className="cart-item__unit-price">
                                                     Precio unitario: <strong>USD {item.price}</strong>
                                                 </span>

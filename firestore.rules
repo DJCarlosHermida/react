@@ -1,0 +1,36 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Catálogo: lectura pública, escritura solo desde consola/scripts
+    match /productos/{productId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Formulario de contacto: solo crear (demo / portfolio)
+    match /contacts/{contactId} {
+      allow create: if request.resource.data.keys().hasAll([
+          'name', 'email', 'message', 'createdAt', 'status'
+        ])
+        && request.resource.data.name is string
+        && request.resource.data.email is string
+        && request.resource.data.message is string
+        && request.resource.data.name.size() >= 2
+        && request.resource.data.message.size() >= 5;
+      allow read, update, delete: if false;
+    }
+
+    // Pedidos simulados del checkout
+    match /orders/{orderId} {
+      allow create: if request.resource.data.keys().hasAll([
+          'cliente', 'items', 'total', 'createdAt', 'status'
+        ])
+        && request.resource.data.items is list
+        && request.resource.data.items.size() > 0
+        && request.resource.data.total is number;
+      allow read, update, delete: if false;
+    }
+  }
+}

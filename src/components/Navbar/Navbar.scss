@@ -157,32 +157,6 @@
     }
 }
 
-.section2 {
-    display: grid;
-    background-image: url(../Inicio/controlador.jpg);
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    height: 75vh;
-    min-height: 320px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.section2 h1 {
-    font-size: clamp(1.1rem, 4vw, 1.55rem);
-    text-align: center;
-    color: whitesmoke;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    padding-inline: 1rem;
-}
-
-.djh1 {
-    font-size: clamp(1.75rem, 7vw, 2.875rem);
-}
-
 @media (max-width: 991.98px) {
     .header {
         padding: 0.65rem 0.85rem;

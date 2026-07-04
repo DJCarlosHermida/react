@@ -1,0 +1,168 @@
+.home-page {
+    background: linear-gradient(180deg, #f3f3f3 0%, #ececec 45%, #f8f8f8 100%);
+    padding-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.home-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: clamp(320px, 55vh, 520px);
+    padding: clamp(2.5rem, 6vw, 4rem) 0;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.52)),
+        url('./controlador.jpg') center / cover no-repeat;
+    color: #f2f2f2;
+    overflow: hidden;
+
+    &__inner {
+        position: relative;
+        z-index: 1;
+        max-width: 40rem;
+    }
+
+    &__kicker {
+        margin: 0 0 0.65rem;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #ff9f43;
+    }
+
+    &__title {
+        margin: 0 0 0.85rem;
+        font-size: clamp(2.5rem, 8vw, 3.75rem);
+        font-weight: 700;
+        line-height: 1.05;
+        color: #fff;
+    }
+
+    &__lead {
+        margin: 0 0 1.75rem;
+        font-size: clamp(1rem, 2.2vw, 1.12rem);
+        line-height: 1.65;
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    &__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+}
+
+.home-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem 1.35rem;
+    border-radius: 0.65rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+
+    &--primary {
+        color: #fff;
+        background: linear-gradient(135deg, #c45a11 0%, #ff9f43 100%);
+        box-shadow: 0 8px 22px rgba(255, 159, 67, 0.28);
+
+        &:hover {
+            color: #fff;
+            transform: translateY(-1px);
+            box-shadow: 0 12px 28px rgba(255, 159, 67, 0.38);
+        }
+    }
+
+    &--ghost {
+        color: #fff;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+
+        &:hover {
+            color: #ff9f43;
+            border-color: rgba(255, 159, 67, 0.55);
+            background: rgba(255, 159, 67, 0.12);
+        }
+    }
+}
+
+.home-body {
+    margin-top: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.home-categories {
+    margin-bottom: 1.5rem;
+
+    &__title {
+        margin: 0 0 1rem;
+        font-size: clamp(1.25rem, 3vw, 1.5rem);
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 0.85rem;
+    }
+}
+
+.home-category-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.1rem 1.15rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        border-color: rgba(255, 159, 67, 0.35);
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    &__label {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+
+    &__cta {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: #c45a11;
+    }
+}
+
+.home-demo {
+    padding: 1rem 1.15rem;
+    border-radius: 0.85rem;
+    background: rgba(255, 159, 67, 0.08);
+    border: 1px solid rgba(255, 159, 67, 0.22);
+
+    &__label {
+        margin: 0 0 0.35rem;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #c45a11;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 0.88rem;
+        line-height: 1.55;
+        color: #555;
+    }
+}

@@ -1,3 +1,16 @@
-.__logo{
-    width: 40px;
+.header__logo-link {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.header__logo-img {
+    display: block;
+    width: auto;
+    height: clamp(36px, 9vw, 52px);
+    max-width: min(140px, 42vw);
+    object-fit: contain;
+    object-position: left center;
 }

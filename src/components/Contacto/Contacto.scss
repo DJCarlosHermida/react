@@ -1,23 +1,323 @@
-.form {
-    text-align: center;
+.contact-page {
+    background: linear-gradient(180deg, #f3f3f3 0%, #ececec 45%, #f8f8f8 100%);
+    padding-bottom: clamp(2.5rem, 6vw, 4rem);
+
+    &__hero {
+        padding: clamp(2rem, 5vw, 3rem) 0 clamp(1.25rem, 3vw, 2rem);
+        background: transparent;
+        color: #1a1a1a;
+    }
+
+    &__kicker {
+        margin: 0 0 0.5rem;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #c45a11;
+    }
+
+    &__title {
+        margin: 0 0 0.75rem;
+        font-size: clamp(2rem, 5vw, 2.75rem);
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: #1a1a1a;
+    }
+
+    &__lead {
+        margin: 0;
+        max-width: 36rem;
+        font-size: clamp(1rem, 2.2vw, 1.1rem);
+        line-height: 1.65;
+        color: #555;
+    }
+
+    &__body {
+        margin-top: 0;
+        position: relative;
+        z-index: 1;
+    }
 }
 
-.form-container {
-    margin: 15      px 60px;
-    padding: 60px;
-    text-align: center;
+.contact-info {
+    padding: clamp(1.5rem, 3vw, 2rem);
+    border-radius: 1.1rem;
+    background: linear-gradient(160deg, #141414 0%, #1f0a0a 55%, #120606 100%);
+    color: #f2f2f2;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+
+    &__title {
+        margin: 0 0 0.85rem;
+        font-size: clamp(1.25rem, 3vw, 1.5rem);
+        font-weight: 700;
+        color: #ff9f43;
+    }
+
+    &__text {
+        margin: 0 0 1.5rem;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 0.98rem;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0 0 1.75rem;
+        padding: 0;
+        display: grid;
+        gap: 1rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.85rem;
+        padding: 0.9rem 1rem;
+        border-radius: 0.75rem;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.65rem;
+        background: rgba(255, 159, 67, 0.14);
+        color: #ff9f43;
+    }
+
+    &__label {
+        display: block;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 0.2rem;
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: #ff9f43;
+        }
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        span {
+            padding: 0.35rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 159, 67, 0.12);
+            border: 1px solid rgba(255, 159, 67, 0.28);
+        }
+    }
 }
 
-.form-container form {
-    padding: 8px;
-    text-align: center;
-    background-color: whitesmoke;
-    border-radius: 20px;
+.contact-form-card {
+    height: 100%;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    border-radius: 1.1rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
 
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0.85rem 1.5rem;
+        border: none;
+        border-radius: 0.75rem;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #fff;
+        background: linear-gradient(135deg, #c45a11 0%, #ff9f43 55%, #e86a00 100%);
+        box-shadow: 0 10px 28px rgba(255, 159, 67, 0.28);
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 32px rgba(255, 159, 67, 0.38);
+            filter: brightness(1.03);
+        }
+
+        &:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+            filter: none;
+        }
+
+        &--ghost {
+            width: auto;
+            margin-top: 0.5rem;
+            color: #1a1a1a;
+            background: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            box-shadow: none;
+
+            &:hover {
+                border-color: #ff9f43;
+                color: #c45a11;
+                transform: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__success {
+        text-align: center;
+        padding: clamp(1.5rem, 4vw, 2.5rem) 0.5rem;
+
+        h3 {
+            margin: 0 0 0.75rem;
+            font-size: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        p {
+            margin: 0 0 1.25rem;
+            line-height: 1.65;
+            color: #555;
+            max-width: 28rem;
+            margin-inline: auto;
+
+            a {
+                color: #c45a11;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__ref {
+        margin: 0 0 1.25rem !important;
+        font-size: 0.85rem;
+        color: #888 !important;
+
+        code {
+            font-size: 0.8rem;
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.35rem;
+            background: #f3f3f3;
+            color: #333;
+        }
+    }
+
+    &__success-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin: 0 auto 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff;
+        background: linear-gradient(135deg, #22a06b, #2dd4a0);
+        box-shadow: 0 10px 24px rgba(34, 160, 107, 0.3);
+    }
 }
 
-.form-container form input {
-    text-align: center;
-    border-radius: 15px;
-    
+.contact-form {
+    &__title {
+        margin: 0 0 0.35rem;
+        font-size: clamp(1.25rem, 3vw, 1.55rem);
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+
+    &__hint {
+        margin: 0 0 1.25rem;
+        font-size: 0.88rem;
+        color: #777;
+    }
+
+    &__error {
+        margin: 0 0 1rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0.65rem;
+        font-size: 0.9rem;
+        color: #8b1a1a;
+        background: rgba(220, 53, 69, 0.1);
+        border: 1px solid rgba(220, 53, 69, 0.25);
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 0.4rem;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #444;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 0.7rem;
+        font-size: 1rem;
+        font-family: inherit;
+        color: #1a1a1a;
+        background: #fafafa;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+
+        &::placeholder {
+            color: #999;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: rgba(255, 159, 67, 0.75);
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(255, 159, 67, 0.18);
+        }
+    }
+
+    &__textarea {
+        resize: vertical;
+        min-height: 8rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .contact-page__body {
+        margin-top: 0;
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact-info__item {
+        padding: 0.75rem;
+    }
+
+    .contact-form-card__btn--ghost {
+        width: 100%;
+    }
 }

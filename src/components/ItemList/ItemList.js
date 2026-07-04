@@ -1,15 +1,20 @@
 import Item from "../Item/Item"
 
-const ItemList = ( { productos } ) => {
+const ItemList = ({ productos, categoryLabel }) => {
+    const title = categoryLabel ? categoryLabel : 'Nuestros Productos'
 
     return (
-        <div className="container my-5">
-            <h2 className="productosTitle">Nuestros Productos</h2>
+        <div className="productos-list">
+            <h2 className="productosTitle">{title}</h2>
             <hr />
 
-            <section className="row my-4">
-                {productos.map((prod) => <Item key={prod.id} {...prod} />)}
-            </section>
+            {productos.length === 0 ? (
+                <p className="productos-list__empty">No hay productos en esta categoría por el momento.</p>
+            ) : (
+                <section className="row my-4">
+                    {productos.map((prod) => <Item key={prod.id} {...prod} />)}
+                </section>
+            )}
         </div>
     )
 }

@@ -69,3 +69,35 @@
     background-color: rgb(97, 13, 13);
     color: white;
 }
+
+.productos-page {
+    padding-top: clamp(1.5rem, 4vw, 2.5rem);
+    padding-bottom: 2rem;
+
+    &__loading {
+        text-align: center;
+        padding: 2rem 0;
+        color: #555;
+    }
+
+    &__empty {
+        text-align: center;
+        padding: 2rem 1rem;
+        color: #555;
+
+        h2 {
+            font-size: 1.35rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+    }
+}
+
+.productos-list {
+    &__empty {
+        text-align: center;
+        padding: 2rem 1rem;
+        color: #666;
+        font-size: 1rem;
+    }
+}

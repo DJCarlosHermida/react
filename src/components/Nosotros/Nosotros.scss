@@ -1,23 +1,245 @@
-.h2-Nosotros {
-    background-color: black;
+.nosotros-page {
+    background: linear-gradient(180deg, #f3f3f3 0%, #ececec 45%, #f8f8f8 100%);
+    padding-bottom: clamp(2.5rem, 6vw, 4rem);
+
+    &__hero {
+        padding: clamp(2rem, 5vw, 3rem) 0 clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    &__kicker {
+        margin: 0 0 0.5rem;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #c45a11;
+    }
+
+    &__title {
+        margin: 0 0 0.75rem;
+        font-size: clamp(2rem, 5vw, 2.75rem);
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: #1a1a1a;
+    }
+
+    &__lead {
+        margin: 0;
+        max-width: 42rem;
+        font-size: clamp(1.02rem, 2.2vw, 1.15rem);
+        line-height: 1.7;
+        color: #555;
+    }
+
+    &__body {
+        display: grid;
+        gap: clamp(2rem, 5vw, 3rem);
+    }
 }
 
-.bio {
-    text-align: center;
-    padding: 20px;
-    background: radial-gradient(rgba(97, 13, 13, 0.493), rgba(0, 0, 0, 0.26));
-    border-radius: 20px;
-    height: 55vh;
-    font-size: 16px;
+.nosotros-intro {
+    &__title {
+        margin: 0 0 1rem;
+        font-size: clamp(1.35rem, 3.2vw, 1.75rem);
+        font-weight: 700;
+        color: #1a1a1a;
+        line-height: 1.25;
+    }
+
+    &__text {
+        margin: 0 0 1rem;
+        line-height: 1.75;
+        color: #444;
+        font-size: 1rem;
+    }
+
+    &__quote {
+        margin: 1.25rem 0 0;
+        padding: 1rem 0 0 1.1rem;
+        border-left: 3px solid #ff9f43;
+        font-size: 1.02rem;
+        font-style: italic;
+        line-height: 1.65;
+        color: #333;
+    }
 }
 
-.usDJ {
-    background-image: url(./logo.png);
-    justify-content: center;
-    justify-items: center;
+.nosotros-highlight {
+    height: 100%;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    border-radius: 1.1rem;
+    background: linear-gradient(160deg, #141414 0%, #1f0a0a 55%, #120606 100%);
+    color: #f2f2f2;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+
+    &__label {
+        margin: 0 0 1rem;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #ff9f43;
+    }
+
+    &__list {
+        margin: 0 0 1.5rem;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.65rem;
+
+        li {
+            position: relative;
+            padding-left: 1.35rem;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.88);
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0.55em;
+                width: 0.45rem;
+                height: 0.45rem;
+                border-radius: 50%;
+                background: #ff9f43;
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+}
+
+.nosotros-btn {
+    display: inline-flex;
     align-items: center;
-    height: 52vh;
-    background-size: cover;
-    background-repeat:  no-repeat;
-    background-position: center;
+    justify-content: center;
+    padding: 0.7rem 1.25rem;
+    border-radius: 0.65rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+
+    &--primary {
+        color: #fff;
+        background: linear-gradient(135deg, #c45a11 0%, #ff9f43 55%, #e86a00 100%);
+        box-shadow: 0 8px 22px rgba(255, 159, 67, 0.25);
+
+        &:hover {
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(255, 159, 67, 0.35);
+        }
+    }
+
+    &--ghost {
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background: transparent;
+
+        &:hover {
+            color: #ff9f43;
+            border-color: rgba(255, 159, 67, 0.5);
+        }
+    }
+}
+
+.nosotros-pillars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.nosotros-pillar {
+    padding: 1.25rem 1.15rem;
+    border-radius: 0.9rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+
+    &__title {
+        margin: 0 0 0.6rem;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #c45a11;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 0.92rem;
+        line-height: 1.6;
+        color: #555;
+    }
+}
+
+.nosotros-categories {
+    text-align: center;
+    padding: clamp(1.25rem, 3vw, 1.75rem);
+    border-radius: 1rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+
+    &__label {
+        margin: 0 0 1rem;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #888;
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.65rem;
+    }
+
+    &__chip {
+        padding: 0.5rem 1rem;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #1a1a1a;
+        background: rgba(255, 159, 67, 0.12);
+        border: 1px solid rgba(255, 159, 67, 0.28);
+        transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+
+        &:hover {
+            color: #fff;
+            background: #c45a11;
+            border-color: #c45a11;
+            transform: translateY(-1px);
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .nosotros-pillars {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .nosotros-pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros-highlight__actions {
+        flex-direction: column;
+
+        .nosotros-btn {
+            width: 100%;
+        }
+    }
 }

@@ -1,0 +1,92 @@
+.product-breadcrumb {
+    margin-bottom: 1.5rem;
+
+    &__trail {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.35rem;
+        margin: 0 0 0.85rem;
+        padding: 0;
+        list-style: none;
+        font-size: 0.88rem;
+    }
+
+    &__item {
+        a {
+            color: #888;
+            text-decoration: none;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #c45a11;
+            }
+        }
+
+        &--current {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+    }
+
+    &__sep {
+        color: #bbb;
+        user-select: none;
+    }
+
+    &__filters {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.45rem 0.55rem;
+        border-radius: 999px;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    &__chip {
+        padding: 0.4rem 0.9rem;
+        border-radius: 999px;
+        font-size: 0.82rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #444;
+        background: transparent;
+        border: 1px solid transparent;
+        transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+        &:hover {
+            color: #c45a11;
+            background: rgba(255, 159, 67, 0.08);
+        }
+
+        &--active {
+            color: #fff;
+            background: linear-gradient(135deg, #c45a11 0%, #ff9f43 100%);
+            border-color: transparent;
+            box-shadow: 0 4px 14px rgba(255, 159, 67, 0.28);
+
+            &:hover {
+                color: #fff;
+                background: linear-gradient(135deg, #b35210 0%, #f0953d 100%);
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .product-breadcrumb__filters {
+        border-radius: 0.85rem;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+
+    .product-breadcrumb__chip {
+        flex-shrink: 0;
+    }
+}

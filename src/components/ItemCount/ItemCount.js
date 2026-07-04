@@ -1,26 +1,41 @@
-import { useState } from "react"
- 
-const ItemCount = ({cantidad, setCantidad, max, addItem}) => {
-
+const ItemCount = ({ cantidad, setCantidad, max, addItem }) => {
     const handleRestar = () => {
-        cantidad > 1 && setCantidad(cantidad -1)
+        cantidad > 1 && setCantidad(cantidad - 1)
     }
-    
+
     const handleSumar = () => {
-        cantidad < max && setCantidad(cantidad +1)
-    } 
-    
+        cantidad < max && setCantidad(cantidad + 1)
+    }
+
     return (
-
-        <div>
-            <button onClick={handleRestar} className={cantidad > 1 ? 'btn btn-outline-danger' : 'btn btn-outline-secondary'} disabled={cantidad === 1}>-</button>
-            <span className="mx-3">{cantidad} {cantidad === 1 ? 'Unidad' : 'Unidades'}</span>
-            <button onClick={handleSumar} className={cantidad < max ? 'btn btn-outline-success' : 'btn btn-outline-secondary'} disabled={cantidad === max}>+</button>
-        
-            <br /> 
-            <button className="btn btn-outline-success my-3" onClick={addItem}>Agregar al carrito</button>
+        <div className="item-count">
+            <div className="item-count__qty">
+                <button
+                    type="button"
+                    onClick={handleRestar}
+                    className="item-count__btn item-count__btn--minus"
+                    disabled={cantidad === 1}
+                    aria-label="Quitar una unidad"
+                >
+                    −
+                </button>
+                <span className="item-count__label">
+                    {cantidad} {cantidad === 1 ? 'unidad' : 'unidades'}
+                </span>
+                <button
+                    type="button"
+                    onClick={handleSumar}
+                    className="item-count__btn item-count__btn--plus"
+                    disabled={cantidad === max}
+                    aria-label="Agregar una unidad"
+                >
+                    +
+                </button>
+            </div>
+            <button type="button" className="item-count__add" onClick={addItem}>
+                Agregar al carrito
+            </button>
         </div>
-
     )
 }
 

@@ -5,7 +5,7 @@ export const Footer = () => {
             <footer className="footer">
                 <div className="footer__container">
                     <p className="footer__p">© Copyright 2026 | All Rights Reserved ®</p>
-                    <a className="footer__a" href="mailto:djcarloshermida@outlook.com" target="_blank" title="Contactar Al Desarrollador">
+                    <a className="footer__a" href="mailto:djcarloshermida@outlook.com" target="_blank" rel="noreferrer" title="Contactar Al Desarrollador">
                         <i className="footer__i">djcarlos hermida</i>
                     </a>
                 </div>

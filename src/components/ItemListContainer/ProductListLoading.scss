@@ -1,0 +1,120 @@
+.productos-list--loading {
+    .productos-list__loading-status {
+        margin: 0;
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: #c45a11;
+        letter-spacing: 0.02em;
+    }
+}
+
+.productos-skeleton-grid {
+    width: 100%;
+    margin: 0;
+}
+
+.product-skeleton {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 1rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+
+    &__media {
+        height: 180px;
+        background: linear-gradient(
+            90deg,
+            #f0f0f0 0%,
+            #e8e8e8 45%,
+            #f5f5f5 55%,
+            #f0f0f0 100%
+        );
+        background-size: 200% 100%;
+        animation: product-skeleton-shimmer 1.35s ease-in-out infinite;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+        padding: 1rem;
+        flex: 1;
+    }
+
+    &__line {
+        height: 0.7rem;
+        border-radius: 999px;
+        background: linear-gradient(
+            90deg,
+            #f0f0f0 0%,
+            #e8e8e8 45%,
+            #f5f5f5 55%,
+            #f0f0f0 100%
+        );
+        background-size: 200% 100%;
+        animation: product-skeleton-shimmer 1.35s ease-in-out infinite;
+
+        &--short {
+            width: 38%;
+            height: 0.55rem;
+        }
+
+        &--title {
+            width: 92%;
+            height: 0.85rem;
+        }
+
+        &--price {
+            width: 42%;
+            height: 0.9rem;
+            margin-top: 0.15rem;
+        }
+    }
+
+    &__btn {
+        margin-top: auto;
+        height: 2.35rem;
+        border-radius: 0.55rem;
+        background: linear-gradient(
+            90deg,
+            #f0f0f0 0%,
+            #e8e8e8 45%,
+            #f5f5f5 55%,
+            #f0f0f0 100%
+        );
+        background-size: 200% 100%;
+        animation: product-skeleton-shimmer 1.35s ease-in-out infinite;
+    }
+}
+
+@keyframes product-skeleton-shimmer {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .product-skeleton__media {
+        height: 140px;
+    }
+
+    .product-skeleton__body {
+        padding: 0.75rem;
+        gap: 0.45rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .product-skeleton__media,
+    .product-skeleton__line,
+    .product-skeleton__btn {
+        animation: none;
+        background: #ececec;
+    }
+}

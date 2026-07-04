@@ -2,10 +2,8 @@
     padding-top: clamp(1.5rem, 4vw, 2.5rem);
     padding-bottom: 2rem;
 
-    &__loading {
-        text-align: center;
-        padding: 2rem 0;
-        color: #555;
+    &--loading {
+        min-height: 55vh;
     }
 
     &__empty {

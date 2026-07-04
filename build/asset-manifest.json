@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.1e49fe5b.css",
-    "main.js": "./static/js/main.a5529818.js",
+    "main.css": "./static/css/main.bba23533.css",
+    "main.js": "./static/js/main.ad4a18a1.js",
     "static/media/controlador.jpg": "./static/media/controlador.5b44dd9b80853b99dbf3.jpg",
     "index.html": "./index.html",
-    "main.1e49fe5b.css.map": "./static/css/main.1e49fe5b.css.map",
-    "main.a5529818.js.map": "./static/js/main.a5529818.js.map"
+    "main.bba23533.css.map": "./static/css/main.bba23533.css.map",
+    "main.ad4a18a1.js.map": "./static/js/main.ad4a18a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e49fe5b.css",
-    "static/js/main.a5529818.js"
+    "static/css/main.bba23533.css",
+    "static/js/main.ad4a18a1.js"
   ]
 }
